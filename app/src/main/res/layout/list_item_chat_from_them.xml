@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
@@ -51,27 +51,29 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tvNameAndTime"
-            android:layout_toRightOf="@id/tvInitials"
             android:layout_marginTop="@dimen/dp5"
+            android:layout_toRightOf="@id/tvInitials"
             android:background="@drawable/background_chat_message_from_them"
             android:padding="@dimen/dp10">
 
             <TextView
                 android:id="@+id/tvText"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tvNameAndTime"
+                android:layout_weight="1"
                 android:text="@{model.text}"
                 android:textColor="@color/white"
                 android:textSize="@dimen/font16"
-                tools:text="Hi " />
+                tools:text="Hi this is very big message! Hi this is very big message! Hi this is very big message! " />
 
             <ImageView
                 android:id="@+id/imvSmiley"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/dp10"
-                app:imgResource="@{model.smileyResourceId}" />
+                app:imgResource="@{model.smileyResourceId}"
+                tools:src="@drawable/ic_happy_1" />
         </LinearLayout>
 
     </RelativeLayout>

@@ -58,14 +58,14 @@
 
             <TextView
                 android:id="@+id/tvText"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tvNameAndTime"
                 android:layout_weight="1"
                 android:text="@{model.text}"
                 android:textColor="@color/white"
                 android:textSize="@dimen/font16"
-                tools:text="Hi this is very big message! Hi this is very big message! Hi this is very big message! " />
+                tools:text="Hi this is very " />
 
             <ImageView
                 android:id="@+id/imvSmiley"

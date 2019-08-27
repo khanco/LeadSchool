@@ -1,10 +1,10 @@
 package com.example.test.screens.chats.mvvm.views;
 
-import android.app.FragmentTransaction;
 import android.databinding.DataBindingUtil;
 import android.databinding.ObservableList;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -160,7 +160,7 @@ public class ChatListActivity extends AppCompatActivity implements ChatListAdapt
     public void onSmileyClickCallback(int position) {
         currentItemPosition = position;
         addSmileyFragment = new AddSmileyFragment();
-        FragmentTransaction ft = getFragmentManager().beginTransaction();
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         addSmileyFragment.setInterface(this);
         ft.add(R.id.frameSmiley, addSmileyFragment).commit();
     }

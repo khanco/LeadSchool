@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_bg"
+    android:padding="@dimen/dp10">
+
+    <ImageView
+        android:id="@+id/imvAdd"
+        android:layout_width="@dimen/dp45"
+        android:layout_height="@dimen/dp45"
+        android:background="@drawable/background_gradient_add"
+        android:clickable="true"
+        android:padding="@dimen/dp5"
+        android:src="@drawable/ic_add_white_24dp"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/edtMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp45"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp5"
+        android:layout_weight="1"
+        android:background="@drawable/background_message"
+        android:ems="10"
+        android:hint="Type here"
+        android:inputType="text"
+        android:maxLines="3"
+        android:paddingLeft="@dimen/dp15"
+        android:paddingRight="@dimen/dp15"
+        android:textColorHint="@color/chat_text_color"
+        android:textSize="@dimen/font16" />
+
+    <ImageButton
+        android:id="@+id/btnSend"
+        android:layout_width="@dimen/dp45"
+        android:layout_height="@dimen/dp45"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="@dimen/dp8"
+        android:src="@drawable/ic_send_white_24dp"
+        android:textColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/btnMic"
+        android:layout_width="@dimen/dp45"
+        android:layout_height="@dimen/dp45"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="@dimen/dp5"
+        android:src="@drawable/ic_mic_none_black_24dp"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/btnCamera"
+        android:layout_width="@dimen/dp45"
+        android:layout_height="@dimen/dp45"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="@dimen/dp5"
+        android:src="@drawable/ic_photo_camera"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

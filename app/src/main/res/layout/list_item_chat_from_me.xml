@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.example.test.screens.chats.mvvm.models.ChatMessageModel" />
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/itemContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp100"
+        android:paddingTop="@dimen/dp15"
+        android:paddingRight="@dimen/dp15"
+        android:paddingBottom="@dimen/dp15">
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{model.dateTime}"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/font10"
+            tools:text="11:02 AM" />
+
+        <TextView
+            android:id="@+id/tvText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:background="@drawable/background_chat_message_from_me"
+            android:padding="@dimen/dp10"
+            android:text="@{model.text}"
+            android:textSize="@dimen/font16"
+            tools:text="This is very big message! This is very big message! This is very big message! This is very big message! This is very big message! " />
+
+    </LinearLayout>
+</layout>

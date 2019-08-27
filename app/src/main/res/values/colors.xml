@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#666666</color>
+    <color name="white">#FFF</color>
+    <color name="inactive">#cecece</color>
+    <color name="errorColor">#ff4747</color>
+    <color name="textColor">#666666</color>
+    <color name="separator">#efefef</color>
+    <color name="link_color">#22a4f4</color>
+    <color name="background">#222222</color>
+    <color name="labelColor">#DDBB00</color>
+    <color name="add_gradient_end_color_blue">#1686d9</color>
+    <color name="add_gradient_start_color_blue">#e262a6</color>
+    <color name="background_message_color">#e3e3e3</color>
+    <color name="chat_text_color">#969393</color>
+    <color name="header_start_color_blue">#1988d8</color>
+    <color name="header_start_color_greenish">#84c8bf</color>
+    <color name="status_bar_start_color_blue">#0d70b8</color>
+    <color name="status_bar_start_color_greenish">#4c8f86</color>
+    <color name="light_bg">#f2f2f2</color>
+    <color name="message_from_me_background">#ededed</color>
+    <color name="transparent">#00000000</color>
+</resources>

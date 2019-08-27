@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.example.test.screens.chats.mvvm.models.ChatMessageModel" />
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/itemContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp15"
+        android:paddingTop="@dimen/dp15"
+        android:paddingRight="@dimen/dp70"
+        android:paddingBottom="@dimen/dp15">
+
+        <TextView
+            android:id="@+id/tvInitials"
+            android:layout_width="@dimen/dp35"
+            android:layout_height="@dimen/dp35"
+            android:layout_marginRight="@dimen/dp5"
+            android:background="@drawable/background_initials"
+            android:gravity="center"
+            android:src="@drawable/ic_add_white_24dp"
+            android:text="@{model.initial}"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font16"
+            android:textStyle="bold"
+            tools:text="A" />
+
+        <TextView
+            android:id="@+id/tvNameAndTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tvInitials"
+            android:text="@{model.nameWithDateTime}"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/font10"
+            tools:text="Shahbaz Khan, 11:02 AM" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNameAndTime"
+            android:layout_toRightOf="@id/tvInitials"
+            android:layout_marginTop="@dimen/dp5"
+            android:background="@drawable/background_chat_message_from_them"
+            android:padding="@dimen/dp10">
+
+            <TextView
+                android:id="@+id/tvText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvNameAndTime"
+                android:text="@{model.text}"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font16"
+                tools:text="Hi " />
+
+            <ImageView
+                android:id="@+id/imvSmiley"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                app:imgResource="@{model.smileyResourceId}" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

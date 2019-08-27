@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/chatHeader"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center"
+        app:multiColorGradientBackground="@{true}"
+        app:navigationContentDescription="@string/abc_action_bar_up_description"
+        app:subtitle="Aman, Sagar, Siddharth"
+        app:subtitleTextColor="@color/white"
+        app:title="Lead School"
+        app:titleTextColor="@color/white"
+        tools:background="@color/header_start_color_greenish" />
+</layout>

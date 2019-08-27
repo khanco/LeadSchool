@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/dp25" />
+    <gradient
+        android:angle="180"
+        android:endColor="@color/status_bar_start_color_blue"
+        android:startColor="@color/status_bar_start_color_greenish" />
+</shape>
